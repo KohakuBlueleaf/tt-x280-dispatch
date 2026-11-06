@@ -1,0 +1,14 @@
+kernel,M,K,F,mode,us_per_forward,notes
+mlp,320,256,384,x280_self_issued,19.06,device-only sequencing
+mlp,320,256,384,host_fed_streaming,29.45,WC window writes + X280 completion into pinned host memory; ring 16
+mlp,320,256,384,host_fed_sync_each_forward,44.91,host waits after each forward
+mlp,320,256,384,ttnn_trace,25.3,110 cores
+mlp,320,256,384,ttnn_eager,739.5,110 cores
+mlp,640,1024,768,x280_self_issued,61.05,
+mlp,640,1024,768,host_fed_streaming,61.15,device-bound
+mlp,640,1024,768,host_fed_sync_each_forward,74.35,
+mlp,640,1024,768,ttnn_trace,65.8,
+mlp,640,1024,768,ttnn_eager,707.8,
+hostio,,,,LIM_write32_WC,0.63,host->X280 LIM persistent window
+hostio,,,,LIM_write32_UC,5.64,
+hostio,,,,LIM_read32,23-42,host reads of LIM over PCIe: avoid

@@ -1,0 +1,50 @@
+disp,0,800,1,flat, sweep,5.086,ok
+disp,0,800,1,flat, sweep,5.085,ok
+disp,0,800,14,cols, leader N, NOC0,1.043,ok
+disp,0,800,14,cols, leader N, NOC0,1.043,ok
+disp,0,800,31,cols, WRITE gather, sync,1.118,ok
+disp,0,800,31,cols, WRITE gather, sync,1.118,ok
+disp,0,800,21,rows, leader E, NOC0, ring 4,0.790,ok
+disp,0,800,21,rows, leader E, NOC0, ring 4,0.790,ok
+disp,0,800,32,cols, WRITE gather, ring 4,0.863,ok
+disp,0,800,32,cols, WRITE gather, ring 4,0.862,ok
+disp,0,1000,1,flat, sweep,4.104,ok
+disp,0,1000,1,flat, sweep,4.104,ok
+disp,0,1000,14,cols, leader N, NOC0,0.910,ok
+disp,0,1000,14,cols, leader N, NOC0,0.910,ok
+disp,0,1000,31,cols, WRITE gather, sync,0.990,ok
+disp,0,1000,31,cols, WRITE gather, sync,0.990,ok
+disp,0,1000,21,rows, leader E, NOC0, ring 4,0.658,ok
+disp,0,1000,21,rows, leader E, NOC0, ring 4,0.658,ok
+disp,0,1000,32,cols, WRITE gather, ring 4,0.688,ok
+disp,0,1000,32,cols, WRITE gather, ring 4,0.688,ok
+disp,0,1250,1,?,,fail
+disp,0,1250,1,?,,fail
+disp,0,1250,14,?,,fail
+disp,0,1250,14,?,,fail
+disp,0,1250,31,?,,fail
+disp,0,1250,31,?,,fail
+disp,0,1250,21,?,,fail
+disp,0,1250,21,?,,fail
+disp,0,1250,32,?,,fail
+disp,0,1250,32,?,,fail
+disp,0,1500,1,?,,fail
+disp,0,1500,1,?,,fail
+disp,0,1500,14,?,,fail
+disp,0,1500,14,?,,fail
+disp,0,1500,31,?,,fail
+disp,0,1500,31,?,,fail
+disp,0,1500,21,?,,fail
+disp,0,1500,21,?,,fail
+disp,0,1500,32,?,,fail
+disp,0,1500,32,?,,fail
+disp,0,1750,1,flat, sweep,2.448,ok
+disp,0,1750,1,flat, sweep,2.448,ok
+disp,0,1750,14,cols, leader N, NOC0,0.681,ok
+disp,0,1750,14,cols, leader N, NOC0,0.681,ok
+disp,0,1750,31,cols, WRITE gather, sync,0.768,ok
+disp,0,1750,31,cols, WRITE gather, sync,0.768,ok
+disp,0,1750,21,rows, leader E, NOC0, ring 4,0.361,ok
+disp,0,1750,21,rows, leader E, NOC0, ring 4,0.361,ok
+disp,0,1750,32,cols, WRITE gather, ring 4,0.461,ok
+disp,0,1750,32,cols, WRITE gather, ring 4,0.461,ok

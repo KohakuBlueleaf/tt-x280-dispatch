@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tt-x280"
+version = "0.1.0"
+description = "Drive resident Metalium kernels on all 120 Tensix cores of a Blackhole p150a from its on-chip X280"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.13"
+dependencies = ["torch", "numpy"]
+
+[project.optional-dependencies]
+docs = ["matplotlib"]
+dev = ["pytest", "ruff", "black", "clang-format", "matplotlib"]
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
+[tool.black]
+target-version = ["py313"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+src = ["python", "tests", "bench", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "BLE", "UP", "SIM", "PERF", "RUF100", "PLC0415"]
+ignore = ["B905", "PERF203"]
+
+[tool.ruff.lint.isort]
+known-third-party = ["ttnn", "_ttx280"]
+
+[tool.ruff.lint.pycodestyle]
+max-doc-length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["hw: needs a Blackhole p150a with a primed X280, ttnn and _ttx280 (TT_X280_HW=1)"]

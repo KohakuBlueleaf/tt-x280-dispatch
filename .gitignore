@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Native build products (the build lives in the tt-metal tree)
+*.so
+*.o
+*.a
+*.bin
+*.elf
+compile_commands.json
+
+# Bench output and local runs; curated results live in docs/measurements
+reports/
+runs/
+*.log
+/bench/out/
+
+# Traces: only the curated ones under docs/measurements/traces are kept
+*.pt
+!docs/measurements/traces/*.pt
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# Local agent files
+.claude/

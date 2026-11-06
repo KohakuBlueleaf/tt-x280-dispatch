@@ -1,0 +1,13 @@
+diff --git a/tt_metal/fabric/experimental/x280/CMakeLists.txt b/tt_metal/fabric/experimental/x280/CMakeLists.txt
+index 9f78f5e8..cdd8bc4b 100644
+--- a/tt_metal/fabric/experimental/x280/CMakeLists.txt
++++ b/tt_metal/fabric/experimental/x280/CMakeLists.txt
+@@ -352,3 +352,8 @@ foreach(_case Unharvested Harvested Disagreement)
+                 "\\[  FAILED  \\]"
+     )
+ endforeach()
++
++# tt-x280-dispatch (github.com/KohakuBlueleaf/tt-x280-dispatch): -DTT_X280_DISPATCH_DIR=<repo>
++if(TT_X280_DISPATCH_DIR)
++    include(${TT_X280_DISPATCH_DIR}/cmake/tt_x280_dispatch.cmake)
++endif()
